@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:31:13 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Sat Jun  9 09:21:26 2018
+# Process ID: 12323
+# Current directory: /tmp/marti/sha256
+# Command line: vivado -mode batch -source /home/marti/Desktop/DS/ds-2018/sha256/scripts/sha256_ctrl_axi.syn.tcl -notrace -tclargs /home/marti/Desktop/DS/ds-2018
+# Log file: /tmp/marti/sha256/vivado.log
+# Journal file: /tmp/marti/sha256/vivado.jou
+#-----------------------------------------------------------
+source /home/marti/Desktop/DS/ds-2018/sha256/scripts/sha256_ctrl_axi.syn.tcl -notrace

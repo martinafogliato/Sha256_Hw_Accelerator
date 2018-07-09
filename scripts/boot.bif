@@ -1,0 +1,6 @@
+image:
+{
+  [bootloader]/home/marti/Desktop/DS/ds-2018/zybo/fsbl.elf
+  top.runs/impl_1/top_wrapper.bit
+  /home/marti/Desktop/DS/ds-2018/zybo/u-boot.elf
+}

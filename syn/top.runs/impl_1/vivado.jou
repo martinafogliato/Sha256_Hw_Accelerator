@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:31:13 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Sat Jun  9 09:28:31 2018
+# Process ID: 14825
+# Current directory: /tmp/marti/sha256/top.runs/impl_1
+# Command line: vivado -log top_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_wrapper.tcl -notrace
+# Log file: /tmp/marti/sha256/top.runs/impl_1/top_wrapper.vdi
+# Journal file: /tmp/marti/sha256/top.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source top_wrapper.tcl -notrace

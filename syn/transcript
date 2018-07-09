@@ -1,0 +1,267 @@
+# vsim work.sha256_tb_axi 
+# Start time: 08:26:27 on Jun 09,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.axi_pkg
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.sha256_pkg(body)
+# Loading work.sha256_tb_axi(sim)
+# Loading work.sha256_ctrl_axi(fsm)
+# Loading work.sha256(struct)
+# Loading work.sha256_cu(fsm)
+# Loading work.sha256_core(arch)
+# Loading work.sha256_exp_unit(arch)
+# Loading work.csa(struct)
+# Loading work.fa(behav)
+add wave -position end sim:/sha256_tb_axi/*
+add wave -position end sim:/sha256_tb_axi/dut/sha256_hw/cu/*
+add wave -position end sim:/sha256_tb_axi/dut/sha256_hw/dp/*
+run 1600 ns
+restart
+run 1020 ns
+force -freeze sim:/sha256_tb_axi/dut/sha256_hw/cu/msg_last 1 0
+# ** Warning: (vsim-8780) Forcing /sha256_tb_axi/dut/msg_last as root of /sha256_tb_axi/dut/sha256_hw/cu/msg_last specified in the force.
+force -freeze sim:/sha256_tb_axi/dut/sha256_hw/cu/msg_last 1 0
+# ** Warning: (vsim-8780) Forcing /sha256_tb_axi/dut/msg_last as root of /sha256_tb_axi/dut/sha256_hw/cu/msg_last specified in the force.
+run 10 ns
+run 10 ns
+run 40 ns
+force -freeze sim:/sha256_tb_axi/dut/sha256_hw/cu/msg_last 0 0
+# ** Warning: (vsim-8780) Forcing /sha256_tb_axi/dut/msg_last as root of /sha256_tb_axi/dut/sha256_hw/cu/msg_last specified in the force.
+run 40 ns
+run 40 ns
+run 40 ns
+run 40 ns
+run 100 ns
+restart
+run 1020 ns
+force -freeze sim:/sha256_tb_axi/dut/sha256_hw/cu/msg_last 1 0
+# ** Warning: (vsim-8780) Forcing /sha256_tb_axi/dut/msg_last as root of /sha256_tb_axi/dut/sha256_hw/cu/msg_last specified in the force.
+run 100 ns
+run 100 ns
+force -freeze sim:/sha256_tb_axi/dut/sha256_hw/cu/msg_last 0 0
+# ** Warning: (vsim-8780) Forcing /sha256_tb_axi/dut/msg_last as root of /sha256_tb_axi/dut/sha256_hw/cu/msg_last specified in the force.
+run 10 ns
+run 20 ns
+force -freeze sim:/sha256_tb_axi/dut/sha256_hw/cu/hash_ack 1 0
+# ** Warning: (vsim-8780) Forcing /sha256_tb_axi/dut/hash_ack as root of /sha256_tb_axi/dut/sha256_hw/cu/hash_ack specified in the force.
+run 10 ns
+run 100 ns
+run 100 ns
+run 200 ns
+run 100 ns
+run 100 ns
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+restart
+# Loading work.sha256_pkg(body)
+# Loading work.sha256_tb_axi(sim)
+# Loading work.sha256_ctrl_axi(fsm)
+# Loading work.sha256(struct)
+# Loading work.sha256_cu(fsm)
+# Loading work.sha256_core(arch)
+# Loading work.sha256_exp_unit(arch)
+# Loading work.csa(struct)
+# Loading work.fa(behav)
+run 2000 ns
+restart
+run 1020 ns
+force -freeze sim:/sha256_tb_axi/dut/sha256_hw/cu/msg_last 1 0
+# ** Warning: (vsim-8780) Forcing /sha256_tb_axi/dut/msg_last as root of /sha256_tb_axi/dut/sha256_hw/cu/msg_last specified in the force.
+run 100 ns
+run 100 ns
+force -freeze sim:/sha256_tb_axi/dut/sha256_hw/cu/msg_last 0 0
+# ** Warning: (vsim-8780) Forcing /sha256_tb_axi/dut/msg_last as root of /sha256_tb_axi/dut/sha256_hw/cu/msg_last specified in the force.
+run 40 ns
+force -freeze sim:/sha256_tb_axi/dut/sha256_hw/cu/hash_ack 1 0
+# ** Warning: (vsim-8780) Forcing /sha256_tb_axi/dut/hash_ack as root of /sha256_tb_axi/dut/sha256_hw/cu/hash_ack specified in the force.
+run 100 ns
+force -freeze sim:/sha256_tb_axi/dut/sha256_hw/cu/hash_ack 0 0
+# ** Warning: (vsim-8780) Forcing /sha256_tb_axi/dut/hash_ack as root of /sha256_tb_axi/dut/sha256_hw/cu/hash_ack specified in the force.
+run 100 ns
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+restart
+# Loading work.sha256_pkg(body)
+# Loading work.sha256_tb_axi(sim)
+# Loading work.sha256_ctrl_axi(fsm)
+# Loading work.sha256(struct)
+# Loading work.sha256_cu(fsm)
+# Loading work.sha256_core(arch)
+# Loading work.sha256_exp_unit(arch)
+# Loading work.csa(struct)
+# Loading work.fa(behav)
+run 1020 ns
+force -freeze sim:/sha256_tb_axi/dut/sha256_hw/cu/msg_last 1 0
+# ** Warning: (vsim-8780) Forcing /sha256_tb_axi/dut/msg_last as root of /sha256_tb_axi/dut/sha256_hw/cu/msg_last specified in the force.
+run 200 ns
+force -freeze sim:/sha256_tb_axi/dut/sha256_hw/cu/msg_last 0 0
+# ** Warning: (vsim-8780) Forcing /sha256_tb_axi/dut/msg_last as root of /sha256_tb_axi/dut/sha256_hw/cu/msg_last specified in the force.
+run 20 ns
+force -freeze sim:/sha256_tb_axi/dut/sha256_hw/cu/hash_ack 1 0
+# ** Warning: (vsim-8780) Forcing /sha256_tb_axi/dut/hash_ack as root of /sha256_tb_axi/dut/sha256_hw/cu/hash_ack specified in the force.
+run 40 ns
+force -freeze sim:/sha256_tb_axi/dut/sha256_hw/cu/hash_ack 0 0
+# ** Warning: (vsim-8780) Forcing /sha256_tb_axi/dut/hash_ack as root of /sha256_tb_axi/dut/sha256_hw/cu/hash_ack specified in the force.
+run 100 ns
+# WARNING: No extended dataflow license exists
+run 400 ns
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+restart
+# Loading work.sha256_pkg(body)
+# Loading work.sha256_tb_axi(sim)
+# Loading work.sha256_ctrl_axi(fsm)
+# Loading work.sha256(struct)
+# Loading work.sha256_cu(fsm)
+# Loading work.sha256_core(arch)
+# Loading work.sha256_exp_unit(arch)
+# Loading work.csa(struct)
+# Loading work.fa(behav)
+run 1020 ns
+force -freeze sim:/sha256_tb_axi/dut/sha256_hw/cu/msg_last 1 0
+# ** Warning: (vsim-8780) Forcing /sha256_tb_axi/dut/msg_last as root of /sha256_tb_axi/dut/sha256_hw/cu/msg_last specified in the force.
+run 200 n
+# Invalid time value: 200 n
+run 200 ns
+force -freeze sim:/sha256_tb_axi/dut/sha256_hw/cu/msg_last 0 0
+# ** Warning: (vsim-8780) Forcing /sha256_tb_axi/dut/msg_last as root of /sha256_tb_axi/dut/sha256_hw/cu/msg_last specified in the force.
+run 20 ns
+force -freeze sim:/sha256_tb_axi/dut/sha256_hw/cu/hash_ack 1 0
+# ** Warning: (vsim-8780) Forcing /sha256_tb_axi/dut/hash_ack as root of /sha256_tb_axi/dut/sha256_hw/cu/hash_ack specified in the force.
+run 40 ns
+force -freeze sim:/sha256_tb_axi/dut/sha256_hw/cu/hash_ack 0 0
+# ** Warning: (vsim-8780) Forcing /sha256_tb_axi/dut/hash_ack as root of /sha256_tb_axi/dut/sha256_hw/cu/hash_ack specified in the force.
+run 400 ns
+run 400 ns
+# WARNING: No extended dataflow license exists
+# UndoStart or Redo start was not called Delete {.main_pane.dataflow.interior.cs.body.pw.wf.top.tree.tree1 undo delete 1}
+#  Trace back: 
+#    <7:eval:1: ::Wave::UndoRedoCaptureTransform Delete {.main_pane.dataflow.interior.cs.body.pw.wf.top.tree.tree1 undo delete 1}
+#    >6:eval:1: ::.main_pane.dataflow.interior.cs.body.pw.wf.top.tree insert end sim:/sha256_tb_axi/dut/sha256_hw/dp/CA
+#    <5:proc:4: ::vsimwidgets::dfAddDataflowFromWave .main_pane.wave.interior.cs.body.pw.wf.tree {1284.792 ns} sim:/sha256_tb_axi/dut/sha256_hw/dp/CA 1
+#    <4:proc:-1: ::Wave::_showDFReadersDrivers drivers .main_pane.wave.interior.cs.body.pw.wf 1
+#    <3:proc:36: ::Wave::ShowDFDrivers .main_pane.wave.interior.cs.body.pw.wf 1
+#    <2:eval:1: ::Wave::1Up .main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data 712 234
+#    <1:proc:2: ::Wave::SelectUp .main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data 712 234 1486 489
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+restart
+# Loading work.sha256_pkg(body)
+# Loading work.sha256_tb_axi(sim)
+# Loading work.sha256_ctrl_axi(fsm)
+# Loading work.sha256(struct)
+# Loading work.sha256_cu(fsm)
+# Loading work.sha256_core(arch)
+# Loading work.sha256_exp_unit(arch)
+# Loading work.csa(struct)
+# Loading work.fa(behav)
+run 1020 ns
+force -freeze sim:/sha256_tb_axi/dut/sha256_hw/cu/msg_last 1 0
+# ** Warning: (vsim-8780) Forcing /sha256_tb_axi/dut/msg_last as root of /sha256_tb_axi/dut/sha256_hw/cu/msg_last specified in the force.
+run 200 ns
+force -freeze sim:/sha256_tb_axi/dut/sha256_hw/cu/msg_last 0 0
+# ** Warning: (vsim-8780) Forcing /sha256_tb_axi/dut/msg_last as root of /sha256_tb_axi/dut/sha256_hw/cu/msg_last specified in the force.
+run 20 ns
+force -freeze sim:/sha256_tb_axi/dut/sha256_hw/cu/hash_ack 1 0
+# ** Warning: (vsim-8780) Forcing /sha256_tb_axi/dut/hash_ack as root of /sha256_tb_axi/dut/sha256_hw/cu/hash_ack specified in the force.
+run 40 ns
+force -freeze sim:/sha256_tb_axi/dut/sha256_hw/cu/hash_ack 0 0
+# ** Warning: (vsim-8780) Forcing /sha256_tb_axi/dut/hash_ack as root of /sha256_tb_axi/dut/sha256_hw/cu/hash_ack specified in the force.
+run 400 ns
+run 400 ns

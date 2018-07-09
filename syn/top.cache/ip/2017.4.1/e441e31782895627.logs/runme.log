@@ -1,0 +1,498 @@
+
+*** Running vivado
+    with args -log top_sha256_ctrl_axi_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_sha256_ctrl_axi_0.tcl
+
+
+****** Vivado v2017.4.1 (64-bit)
+  **** SW Build 2117270 on Tue Jan 30 15:31:13 MST 2018
+  **** IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source top_sha256_ctrl_axi_0.tcl -notrace
+Command: synth_design -top top_sha256_ctrl_axi_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13215 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1259.820 ; gain = 82.996 ; free physical = 3887 ; free virtual = 7822
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_sha256_ctrl_axi_0' [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ip/top_sha256_ctrl_axi_0/synth/top_sha256_ctrl_axi_0.vhd:82]
+INFO: [Synth 8-3491] module 'sha256_ctrl_axi' declared at '/tmp/marti/sha256/top.srcs/sources_1/bd/top/ipshared/f96b/sha256_ctrl_axi.srcs/sources_1/imports/ds-2018/sha256/vhdl/sha256_ctrl_axi.vhd:8' bound to instance 'U0' of component 'sha256_ctrl_axi' [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ip/top_sha256_ctrl_axi_0/synth/top_sha256_ctrl_axi_0.vhd:141]
+INFO: [Synth 8-638] synthesizing module 'sha256_ctrl_axi' [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ipshared/f96b/sha256_ctrl_axi.srcs/sources_1/imports/ds-2018/sha256/vhdl/sha256_ctrl_axi.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'sha256' [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ipshared/f96b/sha256_ctrl_axi.srcs/sources_1/imports/ds-2018/sha256/vhdl/sha256.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'sha256_cu' [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ipshared/f96b/sha256_ctrl_axi.srcs/sources_1/imports/ds-2018/sha256/vhdl/sha256_cu.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'sha256_cu' (1#1) [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ipshared/f96b/sha256_ctrl_axi.srcs/sources_1/imports/ds-2018/sha256/vhdl/sha256_cu.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'sha256_core' [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ipshared/f96b/sha256_ctrl_axi.srcs/sources_1/imports/ds-2018/sha256/vhdl/sha256_core.vhd:30]
+INFO: [Synth 8-226] default block is never used [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ipshared/f96b/sha256_ctrl_axi.srcs/sources_1/imports/ds-2018/sha256/vhdl/sha256_core.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'sha256_exp_unit' [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ipshared/f96b/sha256_ctrl_axi.srcs/sources_1/imports/ds-2018/sha256/vhdl/sha256_exp_unit.vhd:21]
+INFO: [Synth 8-226] default block is never used [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ipshared/f96b/sha256_ctrl_axi.srcs/sources_1/imports/ds-2018/sha256/vhdl/sha256_exp_unit.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'sha256_exp_unit' (2#1) [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ipshared/f96b/sha256_ctrl_axi.srcs/sources_1/imports/ds-2018/sha256/vhdl/sha256_exp_unit.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'csa' [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ipshared/f96b/sha256_ctrl_axi.srcs/sources_1/imports/ds-2018/sha256/vhdl/csa.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'fa' [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ipshared/f96b/sha256_ctrl_axi.srcs/sources_1/imports/ds-2018/sha256/vhdl/fa.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'fa' (3#1) [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ipshared/f96b/sha256_ctrl_axi.srcs/sources_1/imports/ds-2018/sha256/vhdl/fa.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'csa' (4#1) [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ipshared/f96b/sha256_ctrl_axi.srcs/sources_1/imports/ds-2018/sha256/vhdl/csa.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'sha256_core' (5#1) [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ipshared/f96b/sha256_ctrl_axi.srcs/sources_1/imports/ds-2018/sha256/vhdl/sha256_core.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'sha256' (6#1) [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ipshared/f96b/sha256_ctrl_axi.srcs/sources_1/imports/ds-2018/sha256/vhdl/sha256.vhd:24]
+INFO: [Synth 8-226] default block is never used [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ipshared/f96b/sha256_ctrl_axi.srcs/sources_1/imports/ds-2018/sha256/vhdl/sha256_ctrl_axi.vhd:159]
+INFO: [Synth 8-226] default block is never used [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ipshared/f96b/sha256_ctrl_axi.srcs/sources_1/imports/ds-2018/sha256/vhdl/sha256_ctrl_axi.vhd:176]
+INFO: [Synth 8-256] done synthesizing module 'sha256_ctrl_axi' (7#1) [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ipshared/f96b/sha256_ctrl_axi.srcs/sources_1/imports/ds-2018/sha256/vhdl/sha256_ctrl_axi.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'top_sha256_ctrl_axi_0' (8#1) [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ip/top_sha256_ctrl_axi_0/synth/top_sha256_ctrl_axi_0.vhd:82]
+WARNING: [Synth 8-3331] design sha256_core has unconnected port K_index[6]
+WARNING: [Synth 8-3331] design sha256_ctrl_axi has unconnected port s0_axi_arprot[2]
+WARNING: [Synth 8-3331] design sha256_ctrl_axi has unconnected port s0_axi_arprot[1]
+WARNING: [Synth 8-3331] design sha256_ctrl_axi has unconnected port s0_axi_arprot[0]
+WARNING: [Synth 8-3331] design sha256_ctrl_axi has unconnected port s0_axi_awprot[2]
+WARNING: [Synth 8-3331] design sha256_ctrl_axi has unconnected port s0_axi_awprot[1]
+WARNING: [Synth 8-3331] design sha256_ctrl_axi has unconnected port s0_axi_awprot[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1302.352 ; gain = 125.527 ; free physical = 3899 ; free virtual = 7835
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1302.352 ; gain = 125.527 ; free physical = 3899 ; free virtual = 7835
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1620.977 ; gain = 1.000 ; free physical = 3655 ; free virtual = 7591
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1620.977 ; gain = 444.152 ; free physical = 3726 ; free virtual = 7662
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1620.977 ; gain = 444.152 ; free physical = 3726 ; free virtual = 7662
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1620.977 ; gain = 444.152 ; free physical = 3728 ; free virtual = 7664
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'sha256_cu'
+INFO: [Synth 8-5546] ROM "mux_sel_AE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mux_sel_H_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "msg_ready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "word_sel" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hash_valid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_data_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_data_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_read_resp" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                    init |                              001 |                              001
+            compression1 |                              010 |                              010
+            compression2 |                              011 |                              011
+              wait_hash1 |                              100 |                              100
+              wait_hash2 |                              101 |                              101
+              hash_ready |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'sha256_cu'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 1620.977 ; gain = 444.152 ; free physical = 3721 ; free virtual = 7656
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     32 Bit       Adders := 1     
+	   6 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   5 Input     32 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 5     
+	   2 Input     32 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 96    
++---Registers : 
+	               32 Bit    Registers := 39    
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	  15 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 6     
+	   3 Input      2 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 10    
+	   4 Input      2 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 13    
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sha256_cu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	  15 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 13    
+	   2 Input      1 Bit        Muxes := 3     
+Module sha256_exp_unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 16    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module fa 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module sha256_core 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   5 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   3 Input     32 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 20    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   4 Input     32 Bit        Muxes := 1     
+Module sha256 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module sha256_ctrl_axi 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   6 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 10    
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design sha256_core has unconnected port K_index[6]
+WARNING: [Synth 8-3331] design top_sha256_ctrl_axi_0 has unconnected port s0_axi_arprot[2]
+WARNING: [Synth 8-3331] design top_sha256_ctrl_axi_0 has unconnected port s0_axi_arprot[1]
+WARNING: [Synth 8-3331] design top_sha256_ctrl_axi_0 has unconnected port s0_axi_arprot[0]
+WARNING: [Synth 8-3331] design top_sha256_ctrl_axi_0 has unconnected port s0_axi_awprot[2]
+WARNING: [Synth 8-3331] design top_sha256_ctrl_axi_0 has unconnected port s0_axi_awprot[1]
+WARNING: [Synth 8-3331] design top_sha256_ctrl_axi_0 has unconnected port s0_axi_awprot[0]
+INFO: [Synth 8-3886] merging instance 'U0/sha256_hw/dp/CE_reg[0]' (FDRE) to 'U0/sha256_hw/dp/CA_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/sha256_hw/dp/CA_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/status_reg_reg[31] )
+INFO: [Synth 8-3886] merging instance 'U0/read_resp_reg[0]' (FDRE) to 'U0/read_resp_reg[1]'
+INFO: [Synth 8-3332] Sequential element (U0/sha256_hw/dp/CA_reg[0]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[31]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[30]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[29]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[28]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[27]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[26]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[25]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[24]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[23]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[22]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[21]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[20]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[19]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[18]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[17]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[16]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[15]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[14]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[13]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[12]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[11]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[10]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[9]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[8]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[7]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[6]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[5]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/status_reg_reg[4]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+INFO: [Synth 8-3332] Sequential element (U0/sha256_hw/cu/K_index_sig_reg[6]) is unused and will be removed from module top_sha256_ctrl_axi_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 1620.977 ; gain = 444.152 ; free physical = 3682 ; free virtual = 7619
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+----------------+---------------+----------------+
+|Module Name | RTL Object     | Depth x Width | Implemented As | 
++------------+----------------+---------------+----------------+
+|sha256_core | K_constants[0] | 64x32         | LUT            | 
+|sha256_core | K_constants[0] | 64x32         | LUT            | 
++------------+----------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:49 . Memory (MB): peak = 1629.977 ; gain = 453.152 ; free physical = 3549 ; free virtual = 7486
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:50 . Memory (MB): peak = 1631.977 ; gain = 455.152 ; free physical = 3548 ; free virtual = 7485
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:50 . Memory (MB): peak = 1669.492 ; gain = 492.668 ; free physical = 3544 ; free virtual = 7481
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:51 . Memory (MB): peak = 1669.492 ; gain = 492.668 ; free physical = 3544 ; free virtual = 7481
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:51 . Memory (MB): peak = 1669.492 ; gain = 492.668 ; free physical = 3544 ; free virtual = 7481
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:51 . Memory (MB): peak = 1669.492 ; gain = 492.668 ; free physical = 3544 ; free virtual = 7481
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:51 . Memory (MB): peak = 1669.492 ; gain = 492.668 ; free physical = 3544 ; free virtual = 7481
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:51 . Memory (MB): peak = 1669.492 ; gain = 492.668 ; free physical = 3544 ; free virtual = 7481
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:51 . Memory (MB): peak = 1669.492 ; gain = 492.668 ; free physical = 3544 ; free virtual = 7481
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++----------------------+--------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name           | RTL Name                                   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++----------------------+--------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top_sha256_ctrl_axi_0 | U0/sha256_hw/dp/exp_unit/wi_ff_reg[5][31]  | 5      | 32    | YES          | NO                 | YES               | 32     | 0       | 
+|top_sha256_ctrl_axi_0 | U0/sha256_hw/dp/exp_unit/wi_ff_reg[13][31] | 8      | 32    | YES          | NO                 | YES               | 32     | 0       | 
++----------------------+--------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    56|
+|2     |LUT1   |     2|
+|3     |LUT2   |   142|
+|4     |LUT3   |   190|
+|5     |LUT4   |   192|
+|6     |LUT5   |   249|
+|7     |LUT6   |   527|
+|8     |SRL16E |    64|
+|9     |FDRE   |   804|
+|10    |FDSE   |   152|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------+----------------+------+
+|      |Instance         |Module          |Cells |
++------+-----------------+----------------+------+
+|1     |top              |                |  2378|
+|2     |  U0             |sha256_ctrl_axi |  2378|
+|3     |    sha256_hw    |sha256          |  2233|
+|4     |      cu         |sha256_cu       |   455|
+|5     |      dp         |sha256_core     |  1776|
+|6     |        exp_unit |sha256_exp_unit |   521|
++------+-----------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:51 . Memory (MB): peak = 1669.492 ; gain = 492.668 ; free physical = 3544 ; free virtual = 7481
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1669.492 ; gain = 174.043 ; free physical = 3602 ; free virtual = 7539
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:51 . Memory (MB): peak = 1669.500 ; gain = 492.668 ; free physical = 3602 ; free virtual = 7539
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 56 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+106 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:52 . Memory (MB): peak = 1669.500 ; gain = 506.051 ; free physical = 3610 ; free virtual = 7547
+INFO: [Common 17-1381] The checkpoint '/tmp/marti/sha256/top.runs/top_sha256_ctrl_axi_0_synth_1/top_sha256_ctrl_axi_0.dcp' has been generated.

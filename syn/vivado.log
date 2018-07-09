@@ -1,0 +1,1105 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:31:13 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Sat Jun  9 09:21:26 2018
+# Process ID: 12323
+# Current directory: /tmp/marti/sha256
+# Command line: vivado -mode batch -source /home/marti/Desktop/DS/ds-2018/sha256/scripts/sha256_ctrl_axi.syn.tcl -notrace -tclargs /home/marti/Desktop/DS/ds-2018
+# Log file: /tmp/marti/sha256/vivado.log
+# Journal file: /tmp/marti/sha256/vivado.jou
+#-----------------------------------------------------------
+source /home/marti/Desktop/DS/ds-2018/sha256/scripts/sha256_ctrl_axi.syn.tcl -notrace
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 's0_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'aresetn' as interface 'aresetn'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'aclk' as interface 'aclk'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 's0_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/marti/sha256/sha256_ctrl_axi'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'.
+Wrote  : </tmp/marti/sha256/top.srcs/sources_1/bd/top/top.bd> 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+</sha256_ctrl_axi/s0_axi/reg0> is being mapped into </ps7/Data> at <0x43C00000 [ 64K ]>
+INFO: [BD 41-1662] The design 'top.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : </tmp/marti/sha256/top.srcs/sources_1/bd/top/top.bd> 
+VHDL Output written to : /tmp/marti/sha256/top.srcs/sources_1/bd/top/synth/top.v
+VHDL Output written to : /tmp/marti/sha256/top.srcs/sources_1/bd/top/sim/top.v
+VHDL Output written to : /tmp/marti/sha256/top.srcs/sources_1/bd/top/hdl/top_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sha256_ctrl_axi .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/tmp/marti/sha256/top.srcs/sources_1/bd/top/ip/top_auto_pc_0/top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_axi_periph/s00_couplers/auto_pc .
+Exporting to file /tmp/marti/sha256/top.srcs/sources_1/bd/top/hw_handoff/top.hwh
+Generated Block Design Tcl file /tmp/marti/sha256/top.srcs/sources_1/bd/top/hw_handoff/top_bd.tcl
+Generated Hardware Definition File /tmp/marti/sha256/top.srcs/sources_1/bd/top/synth/top.hwdef
+generate_target: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1422.273 ; gain = 133.051 ; free physical = 4248 ; free virtual = 8105
+[Sat Jun  9 09:22:19 2018] Launched top_ps7_0_synth_1, top_sha256_ctrl_axi_0_synth_1, top_rst_ps7_100M_0_synth_1, top_auto_pc_0_synth_1...
+Run output will be captured here:
+top_ps7_0_synth_1: /tmp/marti/sha256/top.runs/top_ps7_0_synth_1/runme.log
+top_sha256_ctrl_axi_0_synth_1: /tmp/marti/sha256/top.runs/top_sha256_ctrl_axi_0_synth_1/runme.log
+top_rst_ps7_100M_0_synth_1: /tmp/marti/sha256/top.runs/top_rst_ps7_100M_0_synth_1/runme.log
+top_auto_pc_0_synth_1: /tmp/marti/sha256/top.runs/top_auto_pc_0_synth_1/runme.log
+[Sat Jun  9 09:22:19 2018] Launched synth_1...
+Run output will be captured here: /tmp/marti/sha256/top.runs/synth_1/runme.log
+[Sat Jun  9 09:22:19 2018] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log top_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_wrapper.tcl
+
+
+****** Vivado v2017.4.1 (64-bit)
+  **** SW Build 2117270 on Tue Jan 30 15:31:13 MST 2018
+  **** IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source top_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/marti/sha256/sha256_ctrl_axi'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'.
+Command: synth_design -top top_wrapper -part xc7z010clg400-1 -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14394 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1277.277 ; gain = 88.996 ; free physical = 3859 ; free virtual = 7803
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_wrapper' [/tmp/marti/sha256/top.srcs/sources_1/bd/top/hdl/top_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'top' [/tmp/marti/sha256/top.srcs/sources_1/bd/top/synth/top.v:318]
+INFO: [Synth 8-638] synthesizing module 'top_ps7_0' [/tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/realtime/top_ps7_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'top_ps7_0' (1#1) [/tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/realtime/top_ps7_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'ps7' of module 'top_ps7_0' requires 73 connections, but only 65 given [/tmp/marti/sha256/top.srcs/sources_1/bd/top/synth/top.v:445]
+INFO: [Synth 8-638] synthesizing module 'top_ps7_axi_periph_0' [/tmp/marti/sha256/top.srcs/sources_1/bd/top/synth/top.v:607]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_18VODSZ' [/tmp/marti/sha256/top.srcs/sources_1/bd/top/synth/top.v:12]
+INFO: [Synth 8-638] synthesizing module 'top_auto_pc_0' [/tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/realtime/top_auto_pc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'top_auto_pc_0' (2#1) [/tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/realtime/top_auto_pc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_18VODSZ' (3#1) [/tmp/marti/sha256/top.srcs/sources_1/bd/top/synth/top.v:12]
+INFO: [Synth 8-256] done synthesizing module 'top_ps7_axi_periph_0' (4#1) [/tmp/marti/sha256/top.srcs/sources_1/bd/top/synth/top.v:607]
+INFO: [Synth 8-638] synthesizing module 'top_rst_ps7_100M_0' [/tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/realtime/top_rst_ps7_100M_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'top_rst_ps7_100M_0' (5#1) [/tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/realtime/top_rst_ps7_100M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_ps7_100M' of module 'top_rst_ps7_100M_0' requires 10 connections, but only 7 given [/tmp/marti/sha256/top.srcs/sources_1/bd/top/synth/top.v:575]
+INFO: [Synth 8-638] synthesizing module 'top_sha256_ctrl_axi_0' [/tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/realtime/top_sha256_ctrl_axi_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'top_sha256_ctrl_axi_0' (6#1) [/tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/realtime/top_sha256_ctrl_axi_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'top' (7#1) [/tmp/marti/sha256/top.srcs/sources_1/bd/top/synth/top.v:318]
+INFO: [Synth 8-256] done synthesizing module 'top_wrapper' (8#1) [/tmp/marti/sha256/top.srcs/sources_1/bd/top/hdl/top_wrapper.v:12]
+WARNING: [Synth 8-3331] design s00_couplers_imp_18VODSZ has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_18VODSZ has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design top_ps7_axi_periph_0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design top_ps7_axi_periph_0 has unconnected port ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1318.809 ; gain = 130.527 ; free physical = 3874 ; free virtual = 7818
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1318.809 ; gain = 130.527 ; free physical = 3874 ; free virtual = 7817
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp4/top_sha256_ctrl_axi_0_in_context.xdc] for cell 'top_i/sha256_ctrl_axi'
+Finished Parsing XDC File [/tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp4/top_sha256_ctrl_axi_0_in_context.xdc] for cell 'top_i/sha256_ctrl_axi'
+Parsing XDC File [/tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc] for cell 'top_i/ps7'
+Finished Parsing XDC File [/tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc] for cell 'top_i/ps7'
+Parsing XDC File [/tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp6/top_rst_ps7_100M_0_in_context.xdc] for cell 'top_i/rst_ps7_100M'
+Finished Parsing XDC File [/tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp6/top_rst_ps7_100M_0_in_context.xdc] for cell 'top_i/rst_ps7_100M'
+Parsing XDC File [/tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp7/top_auto_pc_0_in_context.xdc] for cell 'top_i/ps7_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [/tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp7/top_auto_pc_0_in_context.xdc] for cell 'top_i/ps7_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [/tmp/marti/sha256/top.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/tmp/marti/sha256/top.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1566.410 ; gain = 0.000 ; free physical = 3624 ; free virtual = 7568
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1566.410 ; gain = 378.129 ; free physical = 3702 ; free virtual = 7646
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1566.410 ; gain = 378.129 ; free physical = 3702 ; free virtual = 7646
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cke. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cke. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 97).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 98).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 99).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 100).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 101).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 102).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 103).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 104).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 105).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 106).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 107).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 108).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 109).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 110).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 111).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 112).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 113).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 114).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 115).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 116).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 117).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 118).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 119).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 120).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 121).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 122).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 123).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 124).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 125).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 126).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 127).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 128).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 129).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 130).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 131).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 132).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 133).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 134).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 135).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 136).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 137).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_odt. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 138).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_odt. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 139).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 140).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 141).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 142).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 143).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 144).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 145).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 146).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 147).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 148).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 149).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 150).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 151).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 152).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 153).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 154).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 155).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 156).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 157).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 158).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 159).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 160).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 161).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 162).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 163).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 164).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 165).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 166).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 167).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 168).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 169).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 170).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 171).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 172).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 173).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 174).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 175).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 176).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 177).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 178).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 179).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 180).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 181).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 182).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 183).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 184).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 185).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 186).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 187).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 188).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 189).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 190).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 191).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 192).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 193).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 194).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 195).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 196).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 197).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 198).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 199).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 200).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 201).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 202).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 203).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 204).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 205).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 206).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 207).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 208).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 209).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 210).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 211).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 212).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 213).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 214).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 215).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 216).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 217).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 218).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 219).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 220).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 221).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 222).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 223).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 224).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 225).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 226).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 227).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 228).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 229).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 230).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 231).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 232).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 233).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 234).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 235).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 236).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 237).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 238).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 239).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 240).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 241).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 242).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 243).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 244).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 245).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 246).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 247).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 248).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 249).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 250).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 251).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 252).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 253).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 254).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 255).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 256).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 257).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 258).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 259).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 260).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  /tmp/marti/sha256/top.runs/synth_1/.Xil/Vivado-14343-marti-UX330UAK/dcp5/top_ps7_0_in_context.xdc, line 261).
+Applied set_property DONT_TOUCH = true for top_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for top_i/ps7. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for top_i/ps7_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for top_i/ps7_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for top_i/rst_ps7_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for top_i/sha256_ctrl_axi. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1566.410 ; gain = 378.129 ; free physical = 3703 ; free virtual = 7648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1566.410 ; gain = 378.129 ; free physical = 3703 ; free virtual = 7648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design s00_couplers_imp_18VODSZ has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_18VODSZ has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design top_ps7_axi_periph_0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design top_ps7_axi_periph_0 has unconnected port ARESETN
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1566.410 ; gain = 378.129 ; free physical = 3693 ; free virtual = 7637
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'top_i/ps7/FCLK_CLK0' to pin 'top_i/ps7/bbstub_FCLK_CLK0/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:43 . Memory (MB): peak = 1604.410 ; gain = 416.129 ; free physical = 3565 ; free virtual = 7509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:43 . Memory (MB): peak = 1604.410 ; gain = 416.129 ; free physical = 3564 ; free virtual = 7509
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:43 . Memory (MB): peak = 1614.426 ; gain = 426.145 ; free physical = 3564 ; free virtual = 7508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 1614.426 ; gain = 426.145 ; free physical = 3564 ; free virtual = 7508
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 1614.426 ; gain = 426.145 ; free physical = 3564 ; free virtual = 7508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 1614.426 ; gain = 426.145 ; free physical = 3564 ; free virtual = 7508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------+----------+
+|      |BlackBox name         |Instances |
++------+----------------------+----------+
+|1     |top_auto_pc_0         |         1|
+|2     |top_ps7_0             |         1|
+|3     |top_rst_ps7_100M_0    |         1|
+|4     |top_sha256_ctrl_axi_0 |         1|
++------+----------------------+----------+
+
+Report Cell Usage: 
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |top_auto_pc_0         |     1|
+|2     |top_ps7_0             |     1|
+|3     |top_rst_ps7_100M_0    |     1|
+|4     |top_sha256_ctrl_axi_0 |     1|
++------+----------------------+------+
+
+Report Instance Areas: 
++------+-------------------+-------------------------+------+
+|      |Instance           |Module                   |Cells |
++------+-------------------+-------------------------+------+
+|1     |top                |                         |   390|
+|2     |  top_i            |top                      |   390|
+|3     |    ps7_axi_periph |top_ps7_axi_periph_0     |   165|
+|4     |      s00_couplers |s00_couplers_imp_18VODSZ |   165|
++------+-------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 1614.426 ; gain = 426.145 ; free physical = 3564 ; free virtual = 7508
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1614.426 ; gain = 178.543 ; free physical = 3622 ; free virtual = 7566
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 1614.434 ; gain = 426.145 ; free physical = 3630 ; free virtual = 7574
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:46 . Memory (MB): peak = 1624.426 ; gain = 460.973 ; free physical = 3603 ; free virtual = 7547
+INFO: [Common 17-1381] The checkpoint '/tmp/marti/sha256/top.runs/synth_1/top_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_wrapper_utilization_synth.rpt -pb top_wrapper_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1624.426 ; gain = 0.000 ; free physical = 3605 ; free virtual = 7549
+INFO: [Common 17-206] Exiting Vivado at Sat Jun  9 09:27:48 2018...
+[Sat Jun  9 09:27:48 2018] synth_1 finished
+wait_on_run: Time (s): cpu = 00:03:56 ; elapsed = 00:05:29 . Memory (MB): peak = 1435.645 ; gain = 0.000 ; free physical = 4149 ; free virtual = 8093
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint '/tmp/marti/sha256/top.srcs/sources_1/bd/top/ip/top_ps7_0/top_ps7_0.dcp' for cell 'top_i/ps7'
+INFO: [Project 1-454] Reading design checkpoint '/tmp/marti/sha256/top.srcs/sources_1/bd/top/ip/top_rst_ps7_100M_0/top_rst_ps7_100M_0.dcp' for cell 'top_i/rst_ps7_100M'
+INFO: [Project 1-454] Reading design checkpoint '/tmp/marti/sha256/top.srcs/sources_1/bd/top/ip/top_sha256_ctrl_axi_0/top_sha256_ctrl_axi_0.dcp' for cell 'top_i/sha256_ctrl_axi'
+INFO: [Project 1-454] Reading design checkpoint '/tmp/marti/sha256/top.srcs/sources_1/bd/top/ip/top_auto_pc_0/top_auto_pc_0.dcp' for cell 'top_i/ps7_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4.1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ip/top_ps7_0/top_ps7_0.xdc] for cell 'top_i/ps7/inst'
+Finished Parsing XDC File [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ip/top_ps7_0/top_ps7_0.xdc] for cell 'top_i/ps7/inst'
+Parsing XDC File [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ip/top_rst_ps7_100M_0/top_rst_ps7_100M_0_board.xdc] for cell 'top_i/rst_ps7_100M/U0'
+Finished Parsing XDC File [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ip/top_rst_ps7_100M_0/top_rst_ps7_100M_0_board.xdc] for cell 'top_i/rst_ps7_100M/U0'
+Parsing XDC File [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ip/top_rst_ps7_100M_0/top_rst_ps7_100M_0.xdc] for cell 'top_i/rst_ps7_100M/U0'
+Finished Parsing XDC File [/tmp/marti/sha256/top.srcs/sources_1/bd/top/ip/top_rst_ps7_100M_0/top_rst_ps7_100M_0.xdc] for cell 'top_i/rst_ps7_100M/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1665.219 ; gain = 229.574 ; free physical = 3928 ; free virtual = 7872
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+get_clocks: Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 2158.723 ; gain = 493.504 ; free physical = 3540 ; free virtual = 7498
+INFO: [Vivado 12-419] Skipping save_design: no new changes to be saved. Use the '-force' option to force a save on the design.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2187.734 ; gain = 5.000 ; free physical = 3534 ; free virtual = 7494
+[Sat Jun  9 09:28:30 2018] Launched impl_1...
+Run output will be captured here: /tmp/marti/sha256/top.runs/impl_1/runme.log
+[Sat Jun  9 09:28:30 2018] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log top_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top_wrapper.tcl -notrace
+
+
+****** Vivado v2017.4.1 (64-bit)
+  **** SW Build 2117270 on Tue Jan 30 15:31:13 MST 2018
+  **** IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source top_wrapper.tcl -notrace
+Command: open_checkpoint /tmp/marti/sha256/top.runs/impl_1/top_wrapper.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1161.441 ; gain = 0.000 ; free physical = 3393 ; free virtual = 7353
+INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4.1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/tmp/marti/sha256/top.runs/impl_1/.Xil/Vivado-14825-marti-UX330UAK/dcp1/top_wrapper_board.xdc]
+Finished Parsing XDC File [/tmp/marti/sha256/top.runs/impl_1/.Xil/Vivado-14825-marti-UX330UAK/dcp1/top_wrapper_board.xdc]
+Parsing XDC File [/tmp/marti/sha256/top.runs/impl_1/.Xil/Vivado-14825-marti-UX330UAK/dcp1/top_wrapper_early.xdc]
+Finished Parsing XDC File [/tmp/marti/sha256/top.runs/impl_1/.Xil/Vivado-14825-marti-UX330UAK/dcp1/top_wrapper_early.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1426.117 ; gain = 0.000 ; free physical = 3102 ; free virtual = 7065
+Restored from archive | CPU: 0.090000 secs | Memory: 0.014923 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1426.117 ; gain = 0.000 ; free physical = 3102 ; free virtual = 7065
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.4.1 (64-bit) build 2117270
+open_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1426.117 ; gain = 264.676 ; free physical = 3105 ; free virtual = 7065
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1471.133 ; gain = 45.016 ; free physical = 3101 ; free virtual = 7061
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 11c91a780
+
+Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.35 . Memory (MB): peak = 1921.625 ; gain = 0.000 ; free physical = 2731 ; free virtual = 6691
+INFO: [Opt 31-389] Phase Retarget created 2 cells and removed 29 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1ba6a696a
+
+Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.40 . Memory (MB): peak = 1921.625 ; gain = 0.000 ; free physical = 2731 ; free virtual = 6691
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1ed0cadc5
+
+Time (s): cpu = 00:00:00.60 ; elapsed = 00:00:00.61 . Memory (MB): peak = 1921.625 ; gain = 0.000 ; free physical = 2731 ; free virtual = 6691
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 248 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1ed0cadc5
+
+Time (s): cpu = 00:00:00.66 ; elapsed = 00:00:00.66 . Memory (MB): peak = 1921.625 ; gain = 0.000 ; free physical = 2731 ; free virtual = 6691
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 1ed0cadc5
+
+Time (s): cpu = 00:00:00.72 ; elapsed = 00:00:00.74 . Memory (MB): peak = 1921.625 ; gain = 0.000 ; free physical = 2731 ; free virtual = 6692
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1921.625 ; gain = 0.000 ; free physical = 2731 ; free virtual = 6691
+Ending Logic Optimization Task | Checksum: 13d5a9b9b
+
+Time (s): cpu = 00:00:00.86 ; elapsed = 00:00:00.88 . Memory (MB): peak = 1921.625 ; gain = 0.000 ; free physical = 2731 ; free virtual = 6691
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1f4d89977
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1945.637 ; gain = 0.000 ; free physical = 2730 ; free virtual = 6691
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1945.637 ; gain = 519.520 ; free physical = 2730 ; free virtual = 6691
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1969.648 ; gain = 0.000 ; free physical = 2725 ; free virtual = 6688
+INFO: [Common 17-1381] The checkpoint '/tmp/marti/sha256/top.runs/impl_1/top_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file top_wrapper_drc_opted.rpt -pb top_wrapper_drc_opted.pb -rpx top_wrapper_drc_opted.rpx
+Command: report_drc -file top_wrapper_drc_opted.rpt -pb top_wrapper_drc_opted.pb -rpx top_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/marti/sha256/sha256_ctrl_axi'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /tmp/marti/sha256/top.runs/impl_1/top_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1977.652 ; gain = 0.000 ; free physical = 2712 ; free virtual = 6674
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1812af2f3
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1977.652 ; gain = 0.000 ; free physical = 2712 ; free virtual = 6674
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1977.652 ; gain = 0.000 ; free physical = 2712 ; free virtual = 6675
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: ace220c2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1977.652 ; gain = 0.000 ; free physical = 2707 ; free virtual = 6670
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1a8e0258c
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1980.664 ; gain = 3.012 ; free physical = 2697 ; free virtual = 6661
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1a8e0258c
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1980.664 ; gain = 3.012 ; free physical = 2697 ; free virtual = 6661
+Phase 1 Placer Initialization | Checksum: 1a8e0258c
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1980.664 ; gain = 3.012 ; free physical = 2697 ; free virtual = 6661
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 21775354b
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 2012.680 ; gain = 35.027 ; free physical = 2690 ; free virtual = 6655
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 21775354b
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 2012.680 ; gain = 35.027 ; free physical = 2690 ; free virtual = 6655
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 104ebfe75
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 2012.680 ; gain = 35.027 ; free physical = 2689 ; free virtual = 6654
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1a3fe49f8
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 2012.680 ; gain = 35.027 ; free physical = 2689 ; free virtual = 6654
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 10aa119f9
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 2012.680 ; gain = 35.027 ; free physical = 2689 ; free virtual = 6654
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 120b0e079
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 2012.680 ; gain = 35.027 ; free physical = 2688 ; free virtual = 6653
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1958fc2a0
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 2012.680 ; gain = 35.027 ; free physical = 2689 ; free virtual = 6654
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 1958fc2a0
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 2012.680 ; gain = 35.027 ; free physical = 2689 ; free virtual = 6654
+Phase 3 Detail Placement | Checksum: 1958fc2a0
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 2012.680 ; gain = 35.027 ; free physical = 2689 ; free virtual = 6654
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 18065cdd4
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 4 CPUs
+INFO: [Place 46-31] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 18065cdd4
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2012.680 ; gain = 35.027 ; free physical = 2688 ; free virtual = 6653
+INFO: [Place 30-746] Post Placement Timing Summary WNS=1.224. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 12ecc3212
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2012.680 ; gain = 35.027 ; free physical = 2688 ; free virtual = 6653
+Phase 4.1 Post Commit Optimization | Checksum: 12ecc3212
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2012.680 ; gain = 35.027 ; free physical = 2688 ; free virtual = 6653
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 12ecc3212
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2012.680 ; gain = 35.027 ; free physical = 2689 ; free virtual = 6655
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 12ecc3212
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2012.680 ; gain = 35.027 ; free physical = 2689 ; free virtual = 6655
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 1978c4120
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2012.680 ; gain = 35.027 ; free physical = 2689 ; free virtual = 6655
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1978c4120
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2012.680 ; gain = 35.027 ; free physical = 2689 ; free virtual = 6655
+Ending Placer Task | Checksum: 138c266c7
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2012.680 ; gain = 35.027 ; free physical = 2692 ; free virtual = 6658
+INFO: [Common 17-83] Releasing license: Implementation
+46 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2012.680 ; gain = 35.027 ; free physical = 2692 ; free virtual = 6658
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.41 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2012.680 ; gain = 0.000 ; free physical = 2685 ; free virtual = 6655
+INFO: [Common 17-1381] The checkpoint '/tmp/marti/sha256/top.runs/impl_1/top_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file top_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2012.680 ; gain = 0.000 ; free physical = 2678 ; free virtual = 6645
+INFO: [runtcl-4] Executing : report_utilization -file top_wrapper_utilization_placed.rpt -pb top_wrapper_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2012.680 ; gain = 0.000 ; free physical = 2687 ; free virtual = 6654
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file top_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2012.680 ; gain = 0.000 ; free physical = 2687 ; free virtual = 6655
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
+Checksum: PlaceDB: 9b3fd893 ConstDB: 0 ShapeSum: 9d828e34 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 13e1fb998
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2066.668 ; gain = 53.988 ; free physical = 2607 ; free virtual = 6575
+Post Restoration Checksum: NetGraph: 892c9687 NumContArr: b4f32311 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 13e1fb998
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2066.668 ; gain = 53.988 ; free physical = 2607 ; free virtual = 6575
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 13e1fb998
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2066.668 ; gain = 53.988 ; free physical = 2592 ; free virtual = 6560
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 13e1fb998
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2066.668 ; gain = 53.988 ; free physical = 2592 ; free virtual = 6560
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 113ce7956
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2070.668 ; gain = 57.988 ; free physical = 2584 ; free virtual = 6552
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.187  | TNS=0.000  | WHS=-0.195 | THS=-24.834|
+
+Phase 2 Router Initialization | Checksum: 10b5dab4a
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2070.668 ; gain = 57.988 ; free physical = 2583 ; free virtual = 6552
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 132fe53d9
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2070.668 ; gain = 57.988 ; free physical = 2585 ; free virtual = 6553
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 465
+ Number of Nodes with overlaps = 54
+ Number of Nodes with overlaps = 15
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.140  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 239758441
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 2070.668 ; gain = 57.988 ; free physical = 2583 ; free virtual = 6551
+Phase 4 Rip-up And Reroute | Checksum: 239758441
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 2070.668 ; gain = 57.988 ; free physical = 2583 ; free virtual = 6551
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1abdeb7a1
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 2070.668 ; gain = 57.988 ; free physical = 2583 ; free virtual = 6551
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.140  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 1abdeb7a1
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 2070.668 ; gain = 57.988 ; free physical = 2583 ; free virtual = 6551
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1abdeb7a1
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 2070.668 ; gain = 57.988 ; free physical = 2583 ; free virtual = 6551
+Phase 5 Delay and Skew Optimization | Checksum: 1abdeb7a1
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 2070.668 ; gain = 57.988 ; free physical = 2583 ; free virtual = 6551
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 202b68344
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 2070.668 ; gain = 57.988 ; free physical = 2583 ; free virtual = 6551
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.140  | TNS=0.000  | WHS=0.051  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 29330dc7a
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 2070.668 ; gain = 57.988 ; free physical = 2583 ; free virtual = 6551
+Phase 6 Post Hold Fix | Checksum: 29330dc7a
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 2070.668 ; gain = 57.988 ; free physical = 2583 ; free virtual = 6551
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.72128 %
+  Global Horizontal Routing Utilization  = 2.12983 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 21d5e0350
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 2070.668 ; gain = 57.988 ; free physical = 2583 ; free virtual = 6551
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 21d5e0350
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 2070.668 ; gain = 57.988 ; free physical = 2582 ; free virtual = 6551
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 14f55abe7
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 2070.668 ; gain = 57.988 ; free physical = 2583 ; free virtual = 6551
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=1.140  | TNS=0.000  | WHS=0.051  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 14f55abe7
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 2070.668 ; gain = 57.988 ; free physical = 2583 ; free virtual = 6551
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 2070.668 ; gain = 57.988 ; free physical = 2600 ; free virtual = 6568
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+63 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 2070.668 ; gain = 57.988 ; free physical = 2600 ; free virtual = 6568
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.44 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2070.668 ; gain = 0.000 ; free physical = 2592 ; free virtual = 6566
+INFO: [Common 17-1381] The checkpoint '/tmp/marti/sha256/top.runs/impl_1/top_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file top_wrapper_drc_routed.rpt -pb top_wrapper_drc_routed.pb -rpx top_wrapper_drc_routed.rpx
+Command: report_drc -file top_wrapper_drc_routed.rpt -pb top_wrapper_drc_routed.pb -rpx top_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /tmp/marti/sha256/top.runs/impl_1/top_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file top_wrapper_methodology_drc_routed.rpt -pb top_wrapper_methodology_drc_routed.pb -rpx top_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file top_wrapper_methodology_drc_routed.rpt -pb top_wrapper_methodology_drc_routed.pb -rpx top_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 4 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /tmp/marti/sha256/top.runs/impl_1/top_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file top_wrapper_power_routed.rpt -pb top_wrapper_power_summary_routed.pb -rpx top_wrapper_power_routed.rpx
+Command: report_power -file top_wrapper_power_routed.rpt -pb top_wrapper_power_summary_routed.pb -rpx top_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+75 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file top_wrapper_route_status.rpt -pb top_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file top_wrapper_timing_summary_routed.rpt -rpx top_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file top_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file top_wrapper_clock_utilization_routed.rpt
+Command: write_bitstream -force top_wrapper.bit -bin_file
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
+INFO: [Designutils 20-2272] Running write_bitstream with 4 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./top_wrapper.bit...
+Writing bitstream ./top_wrapper.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-186] '/tmp/marti/sha256/top.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Sat Jun  9 09:30:06 2018. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+93 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 2438.418 ; gain = 291.441 ; free physical = 2539 ; free virtual = 6523
+INFO: [Common 17-206] Exiting Vivado at Sat Jun  9 09:30:06 2018...
+[Sat Jun  9 09:30:06 2018] impl_1 finished
+wait_on_run: Time (s): cpu = 00:01:32 ; elapsed = 00:01:36 . Memory (MB): peak = 2191.734 ; gain = 4.000 ; free physical = 3509 ; free virtual = 7493
+
+[VIVADO]: done
+  bitstream in /tmp/marti/sha256/top.runs/impl_1/top_wrapper.bit
+  resource utilization report in /tmp/marti/sha256/top.runs/impl_1/top_wrapper_utilization_placed.rpt
+  timing report in /tmp/marti/sha256/top.runs/impl_1/top_wrapper_timing_summary_routed.rpt
+INFO: [Common 17-206] Exiting Vivado at Sat Jun  9 09:30:06 2018...
