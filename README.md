@@ -364,17 +364,17 @@ After that, the application guides the computation of the hash through the follo
 
 1. For all the words contained in the necessary number of blocks (but 2, which represent the length and will be sent later), check that the SHA256 is ready to receive a new word  
 
-    ```c
+	```c
     for(i=0; i<(num_blocks*WORDS_IN_BLOCK-2); i++){
     if((pread(dev, &status, WORD_BYTES, STATUS_ADDR)) < 4) {
       puts("fail to read status register");
     }
     //check the device is ready and send one word
     while(0x01 != (status & 0x00000001));
-```
+	```
 2. Prepare the word and send it  
 
-    ```c
+	```c
     word_to_send = 0;
     for(j=0; j<4; j++){
       word_to_send |= ((uint32_t)blocks[j+i*4] << (32-8-j*8));
@@ -382,20 +382,20 @@ After that, the application guides the computation of the hash through the follo
     if((pwrite(dev, &word_to_send, WORD_BYTES, DATA_IN_ADDR))< 4){
       puts("fail to write word");
     }
-```
+	```
 3. At the end of the loop, send the first 32 bits of the length  
-
-    ```c
+	
+	```c
     word_to_send = 0;
     word_to_send = ((uint32_t*)&num_bits)[1];
 
     if((pwrite(dev, &word_to_send, WORD_BYTES, DATA_IN_ADDR)) < 4){
     printf("fail to write block[%d]\n", i);
     }
-```
+	```
 4. Set bit 3 of the status register to signal the following one will be the last 32-bit word of the padded message and send it  
 
-    ```c
+	```c
     //signal the last word
     if((pwrite(dev, &msg_last, WORD_BYTES, STATUS_ADDR)) < 4){
     puts("fail to set bit 3 of status register");
@@ -412,10 +412,10 @@ After that, the application guides the computation of the hash through the follo
     if((pwrite(dev, &word_to_send, WORD_BYTES, DATA_IN_ADDR)) < 4){
     puts("fail to write word.");
     }
-```
+	```
 5. Wait the `hash_valid` bit to be set by the device and read sequentially the 8 registers in which the hash is stored  
 
-    ```c
+	```c
     //wait that the hash is valid
     while(0x3 != (status & 0x00000003));
 
@@ -425,10 +425,10 @@ After that, the application guides the computation of the hash through the follo
       puts("fail to read data out register");
     }
     }
-```
+	```
 6. Set bit 2 of the status register to acknowledge the hash, print it for the user and reset bit 2 and 3 of the status register to get ready for a new set of operations  
 
-    ```c
+	```c
     //signal the hash has been read
     if((pwrite(dev, &hash_ack, WORD_BYTES, STATUS_ADDR)) < 4) {
     puts("fail to write bit 4 of status register");
@@ -442,7 +442,7 @@ After that, the application guides the computation of the hash through the follo
     if((pwrite(dev, &rst_status, WORD_BYTES, STATUS_ADDR)) < 4){
     puts("fail to reset status register");
     }
-```
+	```
 
 Of course this is not the most efficient implementation since the peripheral device may be slow and the presence of `while` loops (busy wait) implies a polling on the device which may waste several clock cycles.  
 
